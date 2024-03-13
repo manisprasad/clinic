@@ -5,9 +5,15 @@ import heroImg03 from '../assets/images/hero-img03.png';
 import icon01 from '../assets/images/icon01.png'
 import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
+import featureImg from '../assets/images/feature-img.png'
+import faqImg from '../assets/images/faq-img.png'
 import { Link } from 'react-router-dom';
 import About from '../components/About/About.jsx';
 import { BsArrowRight, } from 'react-icons/bs';
+import ServicesList from '../components/Services/ServicesList.jsx';
+import FaqList from '../components/Faq/FaqList.jsx';
+import Testimonial from '../components/Testimonial/Testimonial';
+import Footer from '../components/Footer/Footer.jsx';
 const Home = () => {
   return (
     <>
@@ -71,7 +77,7 @@ const Home = () => {
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center">Providing the best medical services</h2>
-            <p className="text-center text__para">povides the best care for everyone.</p>
+            <p className="text-center text__para">provides the best care for everyone.</p>
 
 
           </div>
@@ -132,8 +138,80 @@ const Home = () => {
       {/* -----about section end here----- */}
 
 
-{/* services section start here */}
-{/* services section end here */}
+      {/* services section start here */}
+      <section>
+        <div className='container'>
+          <div className='xl:w-[470px] mx-auto'>
+            <h2 className='heading text-center'>Our medical services</h2>
+            <p className='text__para text-center'>
+              World-class care for everyone. Our health system offers unmatched, expert health care.
+            </p>
+          </div>
+          <ServicesList />
+        </div>       
+      </section>
+      {/* services section end here */}
+
+      {/* ------- feature section---------- */}
+      <section>
+        <div className='container'>
+          <div className='flex items-center justify-center flex-col lg:flex-row'>
+            {/* ------- feature content---------- */}
+            <div className='xl:w-[670px]'>
+              <h2 className='heading'>Get virtual treatment <br /> anytime.</h2>
+              <ul className='pl-4'>
+                <li className='text__para'>
+                  1. Schedule the appointment directly.
+                </li>
+                <li className='text__para'>
+                  2. Search for your physician here, and contact their office.
+                </li>
+                <li className="text__para">
+                  3. View our physician who are accepting new patients, use the online scheduling tool to select an appointment time.
+                </li>
+              </ul>
+              <Link to='/'><button className='btn'>Learn More</button></Link>
+            </div>
+
+            {/* ------- feature img ---------- */}
+            <div className='relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0'>
+              <img src={featureImg} className='w-3/4' alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ------- feature section end ---------- */}
+
+      {/* -------faq section---------- */}
+      <section>
+        <div className='container'>
+          <div className='flex justify-between gap-[50px] lg:gap-0'>
+            <div className='w-1/2 hidden md:block'>
+              <img src={faqImg} alt="" />
+            </div>
+            <div className='w-full md:w-1/2'>
+              <h2 className='heading'>Most questions by our beloved patients</h2>
+              <FaqList />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ------- faq section end ---------- */}
+
+      {/* testimonal start here       */}
+     <section>
+     <div className='container'>
+        <div className="xl:w-[470px] mx-auto">
+          <h2 className="heading text-center">Whats our patient says</h2>
+          <p className='text__para text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet atque laudantium ipsa.</p>
+        
+        </div>
+<Testimonial/>
+      </div>
+     </section>
+
+      {/* testimonal end here       */}
+
     </>
   )
 }
