@@ -95,6 +95,54 @@ const Testimonial = () => {
             </p>
           </div>
         </SwiperSlide>
+
+
+        <SwiperSlide>
+          <div className="py-[30px] px-5 rounded-3">
+            <div className="flex items-center gap-[13px]">
+              <img src={patientAvatar} alt="" />
+              <div>
+                <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
+                  User
+                </h4>
+                <div className="flex items-center gap-[2px]">
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                </div>
+              </div>
+            </div>
+            <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
+              I have taken medicine services from them and they treat so well.
+            </p>
+          </div>
+        </SwiperSlide>
+
+
+        <SwiperSlide>
+          <div className="py-[30px] px-5 rounded-3">
+            <div className="flex items-center gap-[13px]">
+              <img src={patientAvatar} alt="" />
+              <div>
+                <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
+                  User
+                </h4>
+                <div className="flex items-center gap-[2px]">
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                  <HiStar className="text-yellowColor w-[18px] h-5" />
+                </div>
+              </div>
+            </div>
+            <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
+              I have taken medicine services from them and they treat so well.
+            </p>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
