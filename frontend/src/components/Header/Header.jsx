@@ -12,12 +12,12 @@ const navLinks = [
   },
   {
     path:'/doctors',
-    display: 'Nk'
+    display: 'Doctor'
   },
 
   {
     path:'/services',
-    display: 'sservices'
+    display: 'services'
   },
 
   {
@@ -67,7 +67,7 @@ const Header = () => {
                     to={link.path} 
                     className={navClass => 
                       navClass.isActive 
-                        ?'text-primaryColor text-[16px] leading-7 font-[600'
+                        ?'text-primaryColor text-[16px] border-b-2 font-semibold border-b-black leading-7 font-[600'
                         :'text-textColor text-[16px] leading-7 font-[600'} 
                   >
                     {link.display}

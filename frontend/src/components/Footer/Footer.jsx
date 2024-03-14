@@ -60,14 +60,33 @@ const Footer = () => {
         <div>
           <img src={logo} alt="" />
           <p className='text-[16px] leading-7 font-[400] text-textColor' >copyright {year} </p>
-          <div className='w-full flex gap-4'>
+          <div className='w-full flex gap-4 justify-between '>
             {
               socialLinks.map((link, index) => <Link>
                 <a href={link.path} key={index} className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group  hover:bg-primaryColor hover:border-none'>
                   {link.icon}
                 </a>
               </Link>
-            )}
+            )
+
+    
+            
+            
+           
+            }
+
+            <div className="flex gap-5 items-center md:ml-32 flex-wrap">
+            {
+              quickLinks.map((link, index) => <Link>
+                <Link to={link.path} key={index} className='text-[16px] leading-7 font-[400] text-textColor hover:text-primaryColor'>
+                  {link.title}
+                </Link>
+              </Link>
+            )
+            }
+
+            </div>
+            
           </div>
         </div>
       </div>
